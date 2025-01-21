@@ -4,27 +4,25 @@ const sections = [
   {
     id: 1,
     title: 'Welcome to My Portfolio',
-    content: `
-      <p class="intro-text">
+    content: 
+      `<p class="intro-text">
         Hello, I'm <strong class="highlight">Nicolas Aguilera</strong>, a passionate 
         <span class="highlight">Software Developer</span>. I specialize in creating intuitive and engaging user interfaces using HTML, CSS, and JavaScript. I'm eager to bring my skills in React and other technologies to real-world projects and grow in a professional environment.
-      </p>
-    `,
+      </p>`,
   },
   {
     id: 2,
     title: 'About Me',
-    content: `
-      <p class="about-text">
+    content: 
+      `<p class="about-text">
         I'm a <span class="highlight">Software Development Technician</span> graduate from TECLAB Technical Institute in Argentina, currently based in Porto, Portugal. With a strong foundation in web and mobile development, I'm proficient in <strong class="highlight">Java</strong>, <strong class="highlight">C++</strong>, <strong class="highlight">JavaScript</strong>, <strong class="highlight">HTML</strong>, <strong class="highlight">CSS</strong>, and frameworks like <strong class="highlight">React</strong> and <strong class="highlight">jQuery</strong>. My goal is to contribute to innovative projects while continually learning and adapting to new challenges.
-      </p>
-    `,
+      </p>`,
   },
   {
     id: 3,
     title: 'My Projects',
-    content: `
-      <ul class="project-list">
+    content: 
+      `<ul class="project-list">
         <li>
           <strong class="highlight">RUF Website Update (Internship):</strong><br />
           <em>August 2024 - Present</em><br />
@@ -39,34 +37,31 @@ const sections = [
           <strong class="highlight">Mobile Development Course:</strong><br />
           Successfully completed training in mobile development, including <span class="highlight">Android Studio</span>, <span class="highlight">REST APIs</span>, <span class="highlight">Firebase</span>, and local storage solutions.
         </li>
-      </ul>
-    `,
+      </ul>`,
   },
   {
     id: 4,
     title: 'My Skills',
-    content: `
-      <ul class="skills-list">
+    content: 
+      `<ul class="skills-list">
         <li><strong class="highlight">Programming Languages:</strong> Java, C++, JavaScript, HTML, CSS.</li>
         <li><strong class="highlight">Frameworks and Libraries:</strong> React, jQuery.</li>
         <li><strong class="highlight">Databases:</strong> MySQL, NoSQL.</li>
         <li><strong class="highlight">Development Tools:</strong> NetBeans, Android Studio, Visual Studio Code.</li>
         <li><strong class="highlight">Soft Skills:</strong> Effective Communication, Teamwork, Problem-Solving, Time Management, Adaptability.</li>
-      </ul>
-    `,
+      </ul>`,
   },
   {
     id: 5,
     title: 'Contact Me',
-    content: `
-      <p class="contact-text">I'm currently looking for job opportunities and open to any collaboration or proposals</p>
+    content: 
+      `<p class="contact-text">I'm currently looking for job opportunities and open to any collaboration or proposals</p>
       <ul class="contact-list">
         <li><strong>Email:</strong> <a href="mailto:aguileranicolasjavier@gmail.com" class="contact-link">aguileranicolasjavier@gmail.com</a></li>
         <li><strong>Phone:</strong> <span class="highlight">+351 935 449 568</span></li>
         <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/aguilera-nicolas" class="contact-link" target="_blank">linkedin.com/in/aguilera-nicolas</a></li>
         <li><strong>Location:</strong> Porto, Portugal</li>
-      </ul>
-    `,
+      </ul>`,
   },
 ];
 
@@ -96,8 +91,6 @@ function handleScroll() {
 window.addEventListener('scroll', handleScroll);
 handleScroll();
 
-
-window.addEventListener('beforeunload', () => {
-    window.scrollTo(0, 0);
-  });
-  
+window.addEventListener('load', () => {
+  window.scrollTo(0, 0);
+});

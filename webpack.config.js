@@ -1,37 +1,37 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');  // Para generar el archivo HTML
-const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // Para extraer el CSS
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  mode: 'production',  // Asegura que está en modo producción
-  entry: './src/index.js',  // Punto de entrada de tu aplicación
+  entry: './src/index.js',
+  mode: 'production', // Cambiado a 'production' para la versión final
   output: {
-    filename: 'main.js',  // Archivo JavaScript generado
-    path: path.resolve(__dirname, 'dist'),  // Directorio de salida
-    clean: true,  // Limpiar la carpeta dist en cada nueva compilación
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/Portfolio/', // Reemplaza '<nombre_del_repositorio>' con el nombre de tu repositorio en GitHub
   },
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use: [
-          MiniCssExtractPlugin.loader,  // Usar el loader para extraer el CSS
-          'css-loader',  // Cargar el archivo CSS
-        ],
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
-  devServer: {
-    static: path.join(__dirname, 'public'),
-    port: 3030,  // Puedes mantener el puerto que prefieras
-    open: true,  // Abrir el navegador automáticamente
-  },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',  // Usar un archivo index.html base desde src
+      template: './src/index.html', // Ruta de tu archivo HTML
+      filename: 'index.html', // Se generará el HTML dentro de dist
     }),
-    new MiniCssExtractPlugin({
-      filename: 'styles.css',  // Nombre del archivo CSS extraído
+    new CopyPlugin({
+      patterns: [
+        { from: 'src/styles.css', to: 'styles.css' }, // Copia tu CSS
+      ],
     }),
   ],
+  devServer: {
+    static: path.join(__dirname, 'dist'), // Usa 'static' en lugar de 'contentBase'
+    port: 8085, // El puerto en el que se servirá la app
+    open: true, // Esto abrirá la app automáticamente en tu navegador
+  },
 };
