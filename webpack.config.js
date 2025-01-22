@@ -4,11 +4,11 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
-  mode: 'production', // Cambiado a 'production' para la versión final
+  mode: 'production',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/Portfolio/', // Reemplaza '<nombre_del_repositorio>' con el nombre de tu repositorio en GitHub
+    publicPath: '/Portfolio/', 
   },
   module: {
     rules: [
@@ -20,18 +20,18 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html', // Ruta de tu archivo HTML
-      filename: 'index.html', // Se generará el HTML dentro de dist
+      template: './src/index.html', 
+      filename: 'index.html', 
     }),
     new CopyPlugin({
       patterns: [
-        { from: 'src/styles.css', to: 'styles.css' }, // Copia tu CSS
+        { from: 'src/styles.css', to: 'styles.css' },
       ],
     }),
   ],
   devServer: {
-    static: path.join(__dirname, 'dist'), // Usa 'static' en lugar de 'contentBase'
-    port: 8085, // El puerto en el que se servirá la app
-    open: true, // Esto abrirá la app automáticamente en tu navegador
+    static: path.join(__dirname, 'dist'),
+    port: 8085, 
+    open: true,
   },
 };

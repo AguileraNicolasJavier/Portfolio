@@ -13,7 +13,7 @@ h1, h2 {
   color: #ffffff;
 }
 
-/* Fondo animado */
+
 body::before {
   content: '';
   position: fixed;
@@ -39,7 +39,7 @@ body::before {
   }
 }
 
-/* Secciones */
+
 .section {
   padding: 70px 20px;
   opacity: 0;
@@ -88,7 +88,7 @@ body::before {
   text-decoration: underline;
 }
 
-/* Botones de llamada a la acción */
+
 button {
   display: block;
   margin: 20px auto;
@@ -107,7 +107,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* Enlaces */
+
 a {
   color: #6a11cb;
   text-decoration: none;
