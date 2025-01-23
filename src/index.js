@@ -6,7 +6,7 @@ const sections = [
     title: 'Welcome to My Portfolio',
     content: 
       `<p class="intro-text">
-        Hello, I'm <strong class="highlight">Nicolas Aguilera</strong>, a passionate 
+        Hello, I'm <strong class="highlight">Nicolás Aguilera</strong>, a passionate 
         <span class="highlight">Software Developer</span>. I specialize in creating intuitive and engaging user interfaces using HTML, CSS, and JavaScript. I'm eager to bring my skills in React and other technologies to real-world projects and grow in a professional environment.
       </p>`,
   },
