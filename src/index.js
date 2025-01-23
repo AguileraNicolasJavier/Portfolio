@@ -37,7 +37,16 @@ const sections = [
           <strong class="highlight">Mobile Development Course:</strong><br />
           Successfully completed training in mobile development, including <span class="highlight">Android Studio</span>, <span class="highlight">REST APIs</span>, <span class="highlight">Firebase</span>, and local storage solutions.
         </li>
-      </ul>`,
+      <div class="project-gallery">
+        <div class="project-item">
+        <a href="https://formulario-reclutamiento.vercel.app/" target="_blank">
+          <img src="https://i.ibb.co/q1y2shm/Captura-de-ecr-2025-01-23-124423.png" alt="Recruitment Form Preview" class="project-preview"/>
+        </a>
+        <p class="project-title">Recruitment Form</p>
+          <p class="project-tech">HTML, CSS</p>
+        </div>
+      </div>
+      </ul>`,   
   },
   {
     id: 4,

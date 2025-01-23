@@ -149,3 +149,54 @@ a:hover {
 .whatsapp-float img {
   animation: float 2s infinite;
 }
+
+.project-gallery {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.project-item {
+  text-align: center;
+  margin-right: 10px;
+}
+
+.project-preview {
+  width: 300px;
+  height: auto;
+  margin-top: 50px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.project-preview:hover {
+  transform: scale(1.05);
+}
+
+.project-title {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.project-tech {
+  color: #666;
+  margin-top: 5px;
+}
+
+.project-gallery::after {
+  content: '→';
+  font-size: 24px;
+  color: #000;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.project-gallery::after:hover {
+  transform: translateY(-50%) scale(1.2);
+}
