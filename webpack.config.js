@@ -7,7 +7,7 @@ module.exports = {
   mode: 'production',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: './dist/main.js',
+    filename: 'main.js',
     publicPath: '',
   },
   module: {
