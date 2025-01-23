@@ -137,6 +137,10 @@ a:hover {
   height: 100px;
 }
 
+.whatsapp-float img:hover {
+  transform: scale(1.1);
+}
+
 @keyframes float {
   0%, 100% {
     transform: translateY(0);
