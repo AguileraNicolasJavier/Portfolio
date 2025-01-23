@@ -6,8 +6,12 @@
   "scripts": {
     "dev": "webpack serve --open",
     "build": "webpack --mode production",
+<<<<<<< HEAD
     "deploy": "npm run build && gh-pages -d dist",
     "start": "webpack-dev-server --mode development"
+=======
+    "deploy": "npm run build && gh-pages -d dist"
+>>>>>>> 5d746a94563cc675f10f6fdfdf1dd9085be7cf6a
   },
   "devDependencies": {
     "copy-webpack-plugin": "^12.0.2",
