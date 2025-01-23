@@ -3,7 +3,7 @@ import './styles.css';
 const sections = [
   {
     id: 1,
-    title: 'Welcome to My Portfol',
+    title: 'Welcome to My Portfolia',
     content: 
       `<p class="intro-text">
         Hello, I'm <strong class="highlight">Nicolas Aguilera</strong>, a passionate 
