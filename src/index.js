@@ -45,6 +45,15 @@ const sections = [
         <p class="project-title">Recruitment Form</p>
           <p class="project-tech">HTML, CSS</p>
         </div>
+
+        <div class="project-item">
+        <a href="https://esthetic-pink-2xfdjc0jd-nicolas-aguileras-projects-873219b1.vercel.app" target="_blank">
+          <img src="https://fv5-6.files.fm/thumb_show.php?i=5twvqzcpmx&view&v=1&PHPSESSID=3935992cad93b7ac264a9453324ae24f97a83886" alt="Esthetic Pink Project Preview" class="project-preview"/>
+        </a>
+        <p class="project-title">Esthetic Pink</p>
+        
+        <p class="project-tech">React, Vercel</p>
+        </div>
       </div>
       </ul>`,   
   },
